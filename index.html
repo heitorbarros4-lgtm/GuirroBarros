@@ -6,7 +6,7 @@
   <title>Guirro &amp; Barros | Comidas Congeladas Artesanais</title>
   
   <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   
   <!-- Google Fonts: Fraunces (Serifada artesanal) & Plus Jakarta Sans (Leitura limpa) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -184,7 +184,7 @@
       </div>
       <div class="flex items-start gap-3 text-xs text-brand-navy">
         <i class="fa-solid fa-location-dot text-brand-terracotta w-4 text-center mt-0.5"></i>
-        <span class="font-medium leading-snug">Rua Rubens Francisco, 1640 - Jardim Cambuí, Botucatu/SP</span>
+        <span class="font-medium leading-snug">Atendimento em Botucatu/SP (dias úteis) e Itapetininga/SP (finais de semana)</span>
       </div>
       <p class="text-xs text-slate-500 leading-relaxed pt-1">
         Marmitas preparadas artesanalmente com ingredientes selecionados e ultracongeladas para preservar o sabor de comida feita na hora.
@@ -220,32 +220,16 @@
     <!-- Rodapé e Fechamento do Carrinho -->
     <div id="cart-footer" class="p-5 sm:p-6 bg-white border-t border-brand-creamDark space-y-4 hidden">
       
-      <!-- Opção Entrega ou Retirada -->
+      <!-- Forma de recebimento: somente entrega -->
       <div>
         <label class="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-2">Forma de Recebimento</label>
-        <div class="grid grid-cols-2 gap-2.5">
-          <button 
-            type="button" 
-            id="delivery-btn"
-            onclick="setDeliveryMode('entrega')"
-            class="py-2.5 px-3 rounded-xl border-2 text-xs font-bold flex items-center justify-center gap-2 transition-all border-brand-terracotta bg-brand-terracotta/10 text-brand-terracotta"
-          >
-            <i class="fa-solid fa-motorcycle"></i>
-            <span>Entrega Botucatu (R$ 7,00)</span>
-          </button>
-          <button 
-            type="button" 
-            id="pickup-btn"
-            onclick="setDeliveryMode('retirada')"
-            class="py-2.5 px-3 rounded-xl border-2 text-xs font-bold flex items-center justify-center gap-2 transition-all border-slate-200 text-slate-600 hover:border-brand-navy/30"
-          >
-            <i class="fa-solid fa-store"></i>
-            <span>Retirar (Grátis)</span>
-          </button>
+        <div class="py-2.5 px-3 rounded-xl border-2 text-xs font-bold flex items-center justify-center gap-2 border-brand-terracotta bg-brand-terracotta/10 text-brand-terracotta">
+          <i class="fa-solid fa-motorcycle"></i>
+          <span>Entrega (R$ 7,00)</span>
         </div>
-        <p id="pickup-address-hint" class="hidden mt-2 text-[11px] text-brand-navy bg-brand-cream px-3 py-2 rounded-lg border border-brand-creamDark">
+        <p class="mt-2 text-[11px] text-brand-navy bg-brand-cream px-3 py-2 rounded-lg border border-brand-creamDark">
           <i class="fa-solid fa-location-dot text-brand-terracotta mr-1"></i>
-          <strong>Retirada:</strong> Rua Rubens Francisco, 1640 - Jardim Cambuí, Botucatu/SP
+          <strong>Atendimento:</strong> Botucatu/SP em dias úteis e Itapetininga/SP aos finais de semana.
         </p>
       </div>
 
@@ -300,7 +284,7 @@
         <div class="lg:col-span-7 text-center lg:text-left space-y-6">
           <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-brand-gold/40 shadow-xs text-xs sm:text-sm font-semibold text-brand-navy">
             <span class="w-2 h-2 rounded-full bg-brand-terracotta animate-pulse"></span>
-            <span>Botucatu/SP • Prontas em 6 minutos</span>
+            <span>Botucatu/SP e Itapetininga/SP • Prontas em 6 minutos</span>
           </div>
 
           <h1 class="font-serif font-extrabold text-3xl sm:text-5xl lg:text-[3.35rem] text-brand-navy leading-[1.15] tracking-tight">
@@ -308,7 +292,7 @@
           </h1>
 
           <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-            Na <strong class="text-brand-navy font-semibold">Guirro &amp; Barros</strong>, em Botucatu/SP, preparamos receitas tradicionais com temperos naturais e ingredientes frescos para facilitar a sua rotina sem abrir mão do sabor de casa.
+            Na <strong class="text-brand-navy font-semibold">Guirro &amp; Barros</strong>, em Botucatu/SP (dias úteis) e Itapetininga/SP (finais de semana), preparamos receitas tradicionais com temperos naturais e ingredientes frescos para facilitar a sua rotina sem abrir mão do sabor de casa.
           </p>
 
           <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
@@ -430,9 +414,9 @@
             <i class="fa-solid fa-snowflake"></i>
           </div>
           <span class="text-xs font-extrabold uppercase tracking-widest text-brand-gold">Passo 02</span>
-          <h3 class="font-serif font-bold text-xl text-brand-navy mt-1 mb-3">Entrega ou Retirada</h3>
+          <h3 class="font-serif font-bold text-xl text-brand-navy mt-1 mb-3">Receba em casa</h3>
           <p class="text-slate-600 text-sm leading-relaxed">
-            Entregamos em Botucatu/SP ou deixamos pronto para você retirar na <strong class="text-brand-navy">Rua Rubens Francisco, 1640 - Jardim Cambuí</strong>.
+            Entregamos em <strong class="text-brand-navy">Botucatu/SP nos dias úteis</strong> e em <strong class="text-brand-navy">Itapetininga/SP aos finais de semana</strong>.
           </p>
         </div>
 
@@ -449,19 +433,19 @@
         </div>
       </div>
 
-      <!-- Faixa de Destaque de Localização e Retirada -->
+      <!-- Faixa de Destaque de Atendimento -->
       <div class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-brand-creamDark shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div class="flex items-start gap-4">
           <div class="w-12 h-12 rounded-2xl bg-brand-navy/10 text-brand-navy flex items-center justify-center text-xl shrink-0 mt-0.5">
             <i class="fa-solid fa-map-location-dot"></i>
           </div>
           <div>
-            <span class="text-xs font-extrabold uppercase tracking-wider text-brand-terracotta">Ponto de Retirada &amp; Cozinha</span>
+            <span class="text-xs font-extrabold uppercase tracking-wider text-brand-terracotta">Onde Atendemos</span>
             <h3 class="font-serif font-bold text-lg sm:text-xl text-brand-navy mt-0.5">
-              Rua Rubens Francisco, 1640 - Jardim Cambuí, Botucatu/SP
+              Botucatu/SP em dias úteis &bull; Itapetininga/SP aos finais de semana
             </h3>
             <p class="text-sm text-slate-500 mt-1">
-              Retire seu pedido sem taxa de entrega ou receba no conforto da sua casa em Botucatu.
+              Receba seu pedido no conforto da sua casa. Atendemos por entrega, sem retirada no local.
             </p>
             <p class="text-sm text-brand-navy mt-2 flex items-start gap-2">
               <i class="fa-brands fa-pix text-brand-terracotta mt-0.5"></i>
@@ -469,15 +453,6 @@
             </p>
           </div>
         </div>
-        <a 
-          href="https://www.google.com/maps/search/?api=1&query=Rua+Rubens+Francisco+1640+Jardim+Cambui+Botucatu+SP" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          class="w-full md:w-auto px-6 py-3.5 rounded-2xl bg-brand-navy hover:bg-brand-navyDark text-white font-bold text-sm flex items-center justify-center gap-2.5 shrink-0 transition-colors shadow-sm"
-        >
-          <i class="fa-solid fa-diamond-turn-right text-brand-gold"></i>
-          <span>Abrir no Google Maps</span>
-        </a>
       </div>
 
     </div>
@@ -528,14 +503,7 @@
             </li>
             <li class="flex items-start gap-3">
               <i class="fa-solid fa-location-dot text-brand-gold w-5 text-center mt-1"></i>
-              <a 
-                href="https://www.google.com/maps/search/?api=1&query=Rua+Rubens+Francisco+1640+Jardim+Cambui+Botucatu+SP" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                class="hover:text-white underline decoration-brand-gold/50 underline-offset-4 transition-colors"
-              >
-                Rua Rubens Francisco, 1640 - Jardim Cambuí, Botucatu/SP
-              </a>
+              <span>Atendimento em Botucatu/SP (dias úteis) e Itapetininga/SP (finais de semana)</span>
             </li>
             <li class="flex items-start gap-3">
               <i class="fa-brands fa-pix text-brand-gold text-lg w-5 text-center mt-0.5"></i>
@@ -548,7 +516,7 @@
 
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
         <p>&copy; 2026 Guirro &amp; Barros - Comidas Congeladas. Todos os direitos reservados.</p>
-        <p>Botucatu/SP • Feito com <i class="fa-solid fa-heart text-brand-terracotta"></i> para facilitar sua rotina.</p>
+        <p>Botucatu/SP &amp; Itapetininga/SP • Feito com <i class="fa-solid fa-heart text-brand-terracotta"></i> para facilitar sua rotina.</p>
       </div>
     </div>
   </footer>
@@ -612,9 +580,8 @@
     // Estado da aplicação
     let cardQuantities = {}; // Quantidade selecionada em cada card antes de adicionar
     let cart = [];           // Itens dentro do carrinho
-    let deliveryMode = 'entrega'; // 'entrega' (R$ 7,00) ou 'retirada' (R$ 0,00)
+    const deliveryMode = 'entrega'; // somente entrega (R$ 7,00)
     const DELIVERY_FEE = 7.00;
-    const STORE_ADDRESS = "Rua Rubens Francisco, 1640 - Jardim Cambuí, Botucatu/SP";
     const WHATSAPP_NUMBER = "5515997659014"; // Número oficial de pedidos (15) 99765-9014
 
     // Inicializa quantidades padrão dos cards em 1
@@ -796,26 +763,6 @@
       updateCartUI();
     }
 
-    // Define modo Entrega vs Retirada
-    function setDeliveryMode(mode) {
-      deliveryMode = mode;
-      const deliveryBtn = document.getElementById('delivery-btn');
-      const pickupBtn = document.getElementById('pickup-btn');
-      const pickupHint = document.getElementById('pickup-address-hint');
-
-      if (mode === 'entrega') {
-        deliveryBtn.className = "py-2.5 px-3 rounded-xl border-2 text-xs font-bold flex items-center justify-center gap-2 transition-all border-brand-terracotta bg-brand-terracotta/10 text-brand-terracotta";
-        pickupBtn.className = "py-2.5 px-3 rounded-xl border-2 text-xs font-bold flex items-center justify-center gap-2 transition-all border-slate-200 text-slate-600 hover:border-brand-navy/30";
-        if (pickupHint) pickupHint.classList.add('hidden');
-      } else {
-        pickupBtn.className = "py-2.5 px-3 rounded-xl border-2 text-xs font-bold flex items-center justify-center gap-2 transition-all border-brand-terracotta bg-brand-terracotta/10 text-brand-terracotta";
-        deliveryBtn.className = "py-2.5 px-3 rounded-xl border-2 text-xs font-bold flex items-center justify-center gap-2 transition-all border-slate-200 text-slate-600 hover:border-brand-navy/30";
-        if (pickupHint) pickupHint.classList.remove('hidden');
-      }
-
-      updateCartUI();
-    }
-
     // Atualiza toda a interface do carrinho (Badge, lista e totais)
     function updateCartUI() {
       const badge = document.getElementById('cart-badge');
@@ -929,12 +876,8 @@
 
       message += `\n------------------------------\n`;
       message += `*Subtotal:* ${formatCurrency(subtotal)}\n`;
-      if (deliveryMode === 'entrega') {
-        message += `*Modalidade:* Entrega em Botucatu (+ ${formatCurrency(fee)})\n`;
-      } else {
-        message += `*Modalidade:* Retirada no local (Grátis)\n`;
-        message += `*Endereço:* ${STORE_ADDRESS}\n`;
-      }
+      message += `*Modalidade:* Entrega (+ ${formatCurrency(fee)})\n`;
+      message += `*Atendimento:* Botucatu/SP (dias úteis) e Itapetininga/SP (finais de semana)\n`;
       message += `*TOTAL DO PEDIDO:* ${formatCurrency(total)}\n`;
       message += `------------------------------\n\n`;
       message += `*Pagamento:* somente via PIX, com envio antecipado do comprovante.\n`;
